@@ -1,0 +1,18 @@
+# Input databases
+-in::file::vall /users/moriwaki/fragment_tools/newfragment/vall.bilab.sep26.2018.gz 
+
+# Query-related input files
+#-in::file::checkpoint          input_files/2jsvX.checkpoint
+-in::file::fasta    ../WP_003963279.fa
+-in::file::s        WP003963temp.pdb
+-frags::ss_pred     WP_003963279.ss2 predA
+
+# Weights file
+-frags::scoring::config         simple.wghts
+
+# What should we do?
+-frags::bounded_protocol
+
+-out::file::frag_prefix         frags
+-frags::describe_fragments      frags.fsc
+
