@@ -1,16 +1,9 @@
 # Input databases
-<<<<<<< HEAD
+
 -in::file::vall /path/to/Rosetta3.10/tools/fragment_tools/vall.jul19.2011.gz
 
 # Query-related input files
 -in::file::fasta    WP_003963279.fa
-=======
--in::file::vall /users/moriwaki/fragment_tools/newfragment/vall.bilab.sep26.2018.gz 
-
-# Query-related input files
-#-in::file::checkpoint          input_files/2jsvX.checkpoint
--in::file::fasta    ../WP_003963279.fa
->>>>>>> 221613a9af4725d2a1408e45e649af4217f1ea65
 -in::file::s        WP003963temp.pdb
 -frags::ss_pred     WP_003963279.ss2 predA
 
@@ -22,7 +15,3 @@
 
 -out::file::frag_prefix         frags
 -frags::describe_fragments      frags.fsc
-<<<<<<< HEAD
-=======
-
->>>>>>> 221613a9af4725d2a1408e45e649af4217f1ea65
