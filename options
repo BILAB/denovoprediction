@@ -2,14 +2,24 @@
 -in
         -file
                 -native WP003963temp.pdb        # native PDB file (optional)
+<<<<<<< HEAD
                 -fasta WP_003963279.fa      # protein sequence in fasta format
+=======
+                -fasta ../WP_003963279.fa      # protein sequence in fasta format
+>>>>>>> 221613a9af4725d2a1408e45e649af4217f1ea65
                 -frag3 frags.200.3mers  # protein 3-residue fragments file
                 -frag9 frags.200.9mers  # protein 9-residue fragments file
 -constraints
         -cst_weight 1.5
+<<<<<<< HEAD
         -cst_file coarse.cst
         -cst_fa_weight 1.5
         -cst_fa_file full.cst
+=======
+        -cst_file ../coarse.cst
+        -cst_fa_weight 1.5
+        -cst_fa_file ../full.cst
+>>>>>>> 221613a9af4725d2a1408e45e649af4217f1ea65
 -abinitio
         -relax
         -increase_cycles 10     # Increase the number of cycles at each stage in AbinitioRelax by this factor
@@ -19,10 +29,19 @@
 -relax
         -fast   # At the end of the de novo protein_folding, do a relax step of type "FastRelax".  This has been shown to be the best deal for speed and robustness.
 -out
+<<<<<<< HEAD
         -nstruct 10000  # how many structures do you want to generate?  Usually want to fold at least 1,000.
+=======
+        -nstruct 6000  # how many structures do you want to generate?  Usually want to fold at least 1,000.
+>>>>>>> 221613a9af4725d2a1408e45e649af4217f1ea65
         -file
                 -scorefile score.sc
                 -silent silent.out
 -overwrite      # overwrite any existing output with the same name you may have generated
 
+<<<<<<< HEAD
 -nstruct 10000
+=======
+-nstruct 6000
+
+>>>>>>> 221613a9af4725d2a1408e45e649af4217f1ea65
